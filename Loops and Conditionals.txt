@@ -1,0 +1,76 @@
+4.1
+
+secret = 7
+guess = 2
+if guess secret:
+    print("Too Low")
+elif guess secret:
+    print("Too High")
+else:
+    print("Just Right")
+Too Low
+
+4.2
+
+small = input("Please input if it is small- 1 {yes} 0 {no}")
+green = input("Please input if it is green- 1 {yes} 0 {no}")
+if small == '1':
+    small = True
+else:
+    small = False
+if green == '1':
+    green = True
+else:
+    green = False
+print(small)
+print(green)
+print(f"small and green{small and green}")
+if small and green:
+    print("The Fruit is Pea")
+elif small and not green:
+    print("The Fruit is Cherry")
+elif not small and not green:
+    print("It is Pumpkin")
+else:
+    print
+6.1
+
+for letter in [3,2,1,0]:
+    print(letter)
+
+3
+2
+1
+0
+
+6.2
+
+guess_me = 7
+number = 1
+while True:
+    if number < guess_me:
+        print("Too Low")
+    elif number > guess_me:
+        print("Too High")
+    else:
+        print("Found It")
+        break
+    number = number + 1
+Too Low
+Too Low
+Found It
+
+6.3
+
+guess_me  = 5
+for number in range(10):
+    if number < guess_me:
+        print(f"Current number is {number} too low.")
+    elif number > guess_me:
+        print(f"Current number is {number} too high.")
+    else:
+        print(f"Current number is {number} found it.")
+Current number is {2} too low
+Current number is {4} too low
+Current number is {6} too high
+Current number is {5} found it
